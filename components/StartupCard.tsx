@@ -28,6 +28,7 @@ const StartupCard = ({ post }: { post: StartupTypeCard }) => {
           <span className='text-16-medium'>{views}</span>
         </div>
       </div>
+
       <div className='flex-between mt-5 gap-5'>
         <div className='flex-1'>
           <Link href={`/user/${author?._id}`}>
@@ -49,7 +50,7 @@ const StartupCard = ({ post }: { post: StartupTypeCard }) => {
       </div>
 
       <Link href={`/startup/${_id}`}>
-        <p className='startup-card_description'>{description}</p>
+        <p className='startup-card_desc'>{description}</p>
         <img src={image} alt='placeholder' className='startup-card_img' />
       </Link>
 
